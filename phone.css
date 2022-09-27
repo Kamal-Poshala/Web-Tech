@@ -1,0 +1,137 @@
+#navbar{
+    flex-direction: column;
+    
+}
+#navbar::before{
+    
+}
+p{
+    font-size: 16px;
+}
+/* Logo and img */
+#logo img{
+   
+}
+
+/* Navigation List styling*/
+#navbar ul{
+   
+    
+}
+#navbar ul li{
+    
+    
+}
+#navbar ul li a{
+   font-size: 17px;
+}
+
+
+#home{
+   height: 370px;
+   padding: 2px;
+   margin: 1px;
+   justify-content:start;
+
+}
+
+#home::before{
+   height: 480px;
+   
+}
+#home h1{
+    
+}
+#home p{
+   margin: 0px;
+   font-size: 17px;
+}
+
+#pri{
+   padding: 5px;
+   font-size: 23px; 
+    
+}
+.btn{
+    
+
+}
+
+
+
+.primary{
+   font-size: 26px;
+    
+}
+.secondary{
+    font-size: 23px;
+}
+
+#ser{
+   flex-direction: column;
+}
+#ser .box{
+   
+}
+#ser .box img{
+   height: 150px;
+}
+
+#serv{
+    flex-direction: column;
+}
+#serv .box{
+    
+}
+#serv .box img{
+    height: 150px;
+}
+#servc{
+    flex-direction: column;
+}
+#servc .box{
+   
+}
+#servc .box img{
+    height: 150px;
+}
+/* Client Section */
+
+.clients{
+    overflow: hidden;
+    
+}
+.clients img{
+    height: 55px;
+}
+.client-item{
+    padding: 0px 0px;
+}
+#client{
+    height: 170px;
+}
+#client::before{
+    height: 25%;
+}
+/* contact Section */
+#contact{
+    
+}
+#contact::before{
+   height: 100%;
+}
+#contact-box{
+    
+}
+#contact-box input, #contact-box textarea{
+   padding: 5px;
+   font-size: 12px;
+}
+#contact-box form{
+    
+
+}
+#contact-box label{
+    font-size: 14px;
+
+}
