@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemoCal</title>
+</head>
+<style>
+    html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+.calculator {
+  border: 1px solid rgb(61, 83, 88);
+  border-radius: 5px;
+  background-color: #d4e6f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+.calculator-screen {
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color:#37fcf2;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+input {
+  height: 60px;
+  background-color: rgb(176, 237, 248);
+  border-radius: 3px;
+  border: 1px solid #0299fd;
+  /*background-color: transparent;*/
+  font-size: 2rem;
+  color: #333;
+  background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+  text-shadow: 0 1px rgba(255,255,255,.4);
+  
+}
+
+input:hover {
+  background-color: #37fcf2;
+  box-shadow:  3px 5px 5px 25px 4px rgba(2, 247, 255);
+}
+
+.operator {
+  color: #337cac;
+}
+
+.all-clear {
+  background-color: #f0595f;
+  border-color: #b0353a;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.all-clear:hover {
+  background-color: #ee5146;
+}
+
+
+.equal-sign:hover {
+  background-color: #6cfa6c;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.equal-sign {
+  background-color: #2ef86b;
+  border-color: #256846;
+  color: rgb(237, 255, 220);
+  height: 100%;
+  /*grid-area: 2 / 4 / 6 / 5;*/
+}
+</style>
+<body>
+    <form class="calculator" name="calculator">
+
+        <input type="text" class="calculator-screen" value="" name="answer"/>
+      
+        <div class="calculator-keys">
+
+          <input type="button" class="operator" value="+" onclick="answer.value+='+'">
+          <input type="button" class="operator" value="-" onclick="answer.value+='-'">
+          <input type="button" class="operator" value="*" onclick="answer.value+='*'">
+          <input type="button" class="operator" value="/"  onclick="answer.value+='/'">
+      
+          <input type="button" value="7"  onclick="answer.value+='7'">
+          <input type="button" value="8"  onclick="answer.value+='8'">
+          <input type="button" value="9"  onclick="answer.value+='9'">
+      
+          <input type="button" value="sqrt" onclick="answer.value+='Math.sqrt()'">  
+          <input type="button" value="4"  onclick="answer.value+='4'">
+          <input type="button" value="5"  onclick="answer.value+='5'">
+          <input type="button" value="6"  onclick="answer.value+='6'">
+            <input type="button" value="pow" onclick="answer.value+='Math.pow()'">
+          <input type="button" value="1"  onclick="answer.value+='1'">
+          <input type="button" value="2"  onclick="answer.value+='2'">
+          <input type="button" value="3"  onclick="answer.value+='3'">
+            <input type="button" value="%" onclick="answer.value+='%'">
+      
+          <input type="button" value="0"  onclick="answer.value+='0'">
+          <input type="button" class="decimal" value="."  onclick="answer.value+='.'">
+          <input type="button" class="all-clear" value="AC" onclick="answer.value=' '">
+      
+          <input type="button" class="equal-sign" value="="  onclick="answer.value=eval(answer.value)">
+      
+        </div>
+    </form>
+     
+</body>
+</html>
